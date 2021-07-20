@@ -1,9 +1,6 @@
-
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 
-
-const globalApi = 'https://api.covid19api.com/summary';
 
 class DataCollection {
   int deceased, vaccinated, recovered, confirmed, tested, dose1, dose2;
@@ -212,6 +209,7 @@ Future<List<DataCollection>> getData(String stateBig) async {
   String small = "";
   List<DataCollection> finalData = [];
   small = stateNameChecker(stateBig);
+ 
   var url = "https://api.covid19india.org/v4/min/data.min.json";
   var response = await http.get(Uri.parse(url));
   if (response.statusCode == 200) {

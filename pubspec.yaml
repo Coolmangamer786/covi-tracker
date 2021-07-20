@@ -37,6 +37,7 @@ dependencies:
   connectivity: ^3.0.6
   rate_my_app: ^1.1.0+1
   flutter_native_splash: ^1.2.0
+  
 
 flutter_native_splash:
   color: "#ffffff"
@@ -45,6 +46,7 @@ flutter_native_splash:
   
 
 dev_dependencies:
+  flutter_config: ^2.0.0
   flutter_test:
     sdk: flutter
 
