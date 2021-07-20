@@ -210,7 +210,7 @@ Future<List<DataCollection>> getData(String stateBig) async {
   List<DataCollection> finalData = [];
   small = stateNameChecker(stateBig);
  
-  var url = "https://api.covid19india.org/v4/min/data.min.json";
+  var url = "API_KEY";
   var response = await http.get(Uri.parse(url));
   if (response.statusCode == 200) {
     var json = jsonDecode(response.body);
@@ -238,7 +238,7 @@ Future<List<DataCollection>> getDistrictData(String state, String dist) async {
   String small = "";
   List<DataCollection> finalData = [];
   small = stateNameChecker(state);
-  var url = "https://api.covid19india.org/v4/min/data.min.json";
+  var url = "API_KEY";
   var response = await http.get(Uri.parse(url));
   if (response.statusCode == 200) {
     var json = jsonDecode(response.body);
