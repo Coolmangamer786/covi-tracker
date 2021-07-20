@@ -49,3 +49,4 @@ app.*.map.json
 #API
 /lib/.env
 /lib/api
+/lib/api/api_methods.dart
